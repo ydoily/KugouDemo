@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel = RankListViewModel()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button {
+                Task {
+                    await viewModel.fetchRankList()
+                }
+            } label: { Text("Hello, World!") }
         }
         .padding()
     }

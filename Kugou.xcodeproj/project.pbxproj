@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C49DE8662D238DF5000A9DF4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C49DE8652D238DF5000A9DF4 /* Alamofire */; };
+		C49DE86B2D238E02000A9DF4 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = C49DE86A2D238E02000A9DF4 /* SwiftyJSON */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		C4C03D7D2D238CA000A1E72F /* Kugou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kugou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C49DE86B2D238E02000A9DF4 /* SwiftyJSON in Frameworks */,
+				C49DE8662D238DF5000A9DF4 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = Kugou;
 			packageProductDependencies = (
+				C49DE8652D238DF5000A9DF4 /* Alamofire */,
+				C49DE86A2D238E02000A9DF4 /* SwiftyJSON */,
 			);
 			productName = Kugou;
 			productReference = C4C03D7D2D238CA000A1E72F /* Kugou.app */;
@@ -94,6 +103,10 @@
 			);
 			mainGroup = C4C03D742D238CA000A1E72F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C49DE8642D238DF5000A9DF4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C49DE8692D238E02000A9DF4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C4C03D7E2D238CA000A1E72F /* Products */;
 			projectDirPath = "";
@@ -248,6 +261,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kugou/Preview Content\"";
+				DEVELOPMENT_TEAM = S237FH9Z6X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -285,6 +299,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kugou/Preview Content\"";
+				DEVELOPMENT_TEAM = S237FH9Z6X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -335,6 +350,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C49DE8642D238DF5000A9DF4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		C49DE8692D238E02000A9DF4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C49DE8652D238DF5000A9DF4 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C49DE8642D238DF5000A9DF4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		C49DE86A2D238E02000A9DF4 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C49DE8692D238E02000A9DF4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C4C03D752D238CA000A1E72F /* Project object */;
 }
